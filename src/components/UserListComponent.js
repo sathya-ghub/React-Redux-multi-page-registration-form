@@ -11,6 +11,7 @@ function UserList({ users }) {
                     <td>{user.lastname}</td>
                     <td>{user.username}</td>
                     <td>{user.occupation}</td>
+                    <td>{user.registeredTime}</td>
                 </tr>
             )
         });
@@ -23,7 +24,8 @@ function UserList({ users }) {
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
-                        <th>occupation</th>
+                        <th>Occupation</th>
+                        <th>Registered Time</th>
                     </tr>
                 </thead>
                 <tbody>

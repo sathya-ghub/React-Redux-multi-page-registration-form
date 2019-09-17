@@ -6,7 +6,7 @@ import logger from 'redux-logger';
 export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
-            users: Registration 
+            users: Registration
          }),
         applyMiddleware(thunk, logger)
     );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-import { Jumbotron, Container, Progress, Alert } from 'reactstrap';
+import { Jumbotron, Container } from 'reactstrap';
 import { connect } from 'react-redux';
 import { signupUser } from '../redux/ActionCreators';
 import Header from './HeaderComponent';
@@ -17,7 +17,7 @@ const mapDispatchToProps = (dispatch) => ({
     signupUser: (user) => dispatch(signupUser(user))
 });
 
-function RenderDash ({users}) {
+function RenderDash({ users }) {
     return (
         <div className="container mt-5">
             <Jumbotron fluid>
@@ -26,19 +26,11 @@ function RenderDash ({users}) {
                     <p className="lead">Sign up using our registration form!</p>
                 </Container>
             </Jumbotron>
-            <Progress striped color="info" value={users.length} className="mt-3" />
-            <Alert color="info" className="mt-3">
-                Number of users signed up is: {users.length}
-            </Alert>
         </div>
     )
 }
 
 class Dashboard extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
