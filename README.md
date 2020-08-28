@@ -1,4 +1,4 @@
-## A multipage registration form made using React and Redux :page_with_curl:
+## A multipage registration form made using React and Redux :clipboard:
 
 ### Setup
 
